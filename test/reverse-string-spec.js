@@ -12,7 +12,7 @@ describe("reverseString", () => {
 
   let badInput = () => {reverseString(33)}
 
-  it('Should throw an error if input is not a string'), () => {
+  it('Should throw an error if input is not a string', () => {
     expect(badInput).to.throw(TypeError, "Input needs to be a string")
-  }
+  })
 })
