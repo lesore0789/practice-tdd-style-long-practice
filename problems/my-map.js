@@ -1,5 +1,12 @@
 function myMap(inputArray, callback) {
-  // Your code here
+  let newArr = [];
+
+  for(let i = 0; i < inputArray.length; i++){
+    let newElement = callback(inputArray[i]);
+    newArr.push(newElement)
+  }
+
+  return newArr;
 }
 
 module.exports = myMap;
